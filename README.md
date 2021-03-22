@@ -1,2 +1,12 @@
 # PersonalWebsite
 A semi retro themed minimalist web page used mainly to store and present my portfolio as a software developer.
+
+## Goals
+### Smooth Scroll
+I am planning on keeping the majority of my content on a single page with a fixed navbar on the top of the viewport. To better control how the user views the content of the page I will be adding a smooth scroll animation through javascript. This script will not only snap the viewport to to the tops of sections but will also take care of scrolling down to sections when links are pressed rather than jumping to them. 
+### Text Animation
+Though I am planning on keeping a minimalist aesthetic, I think adding a slow passed animation to my job title will help convey some confidence in the work I produce. This animation will be active whenever the home section is in the viewport and will cause the letters to grow from left to right. Since a great interest of mine is in game development I think adding a bit of an overgrowth to the letters so that they can shrink down to propper size, or just below that then back to an overgrown size repeatedly until it stays at the propper size in a bit of an elastic effect, will add a very gamey, eye catching aspect.
+### Portfolio Gallery
+I am planning on creating projects in the following catagories, Web Development(HTML,CSS,JavaScript), Java, C++, C#, Python, and SQL. Each catagory will display images of their 3 most recent projects, capturing either the main concepts applied or the atmosphere I hoped to achieve within. Upon hovering over the image a quick description of the project will appear. The heading of the gallery will be a link to the top of a seperate page containing an in depth explanation of all the projects, while each image will be a link sending you to the same page but to the specific locations of whatever project you had clicked.
+### Portfolio Page
+I am unsure as of yet how much of the color scheme will be kept from the main web page on the portfolio page. This is mostly due to the fact that within the portfolio page I want to create an atmosphere that draws you into the concept of each project. For example, for my more Gamey projects I would like to create interactive animations along the outsides of the project description that reflect the projects aesthetic.
