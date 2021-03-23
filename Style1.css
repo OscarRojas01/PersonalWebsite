@@ -78,9 +78,6 @@ section{
     background-color: rgb(35, 61, 70);
 }
 /* Home */
-section#home *{
-    font-size: 2vmin;
-}
 
 section#home div{
     position:absolute;
@@ -90,16 +87,23 @@ section#home div{
 }
 
 section#home div p:nth-child(1){
-    font-size: 2.5vmin;
+    font-size: 3vmin;
 } 
 
 section#home div p:nth-child(2){
+    font-size: 2.5vmin;
     text-align: right;
 }
 
-section#home div p small{
-    /* color:rgb(124, 172, 180); */
-    font-size: 1.5vmin;
+.growingText span{
+    font-size: 0vmin;
+    visibility: hidden;
+    transition: all .75s ease;
+}
+
+.growingText span.animate{
+    visibility: visible;
+    font-size: 1.75vmin;
 }
 
 #coverPhoto{
