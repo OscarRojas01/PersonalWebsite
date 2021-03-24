@@ -21,15 +21,14 @@ body{
     line-height: 1.6;
     height: 100vh;
     text-align: center;
-    align-items: center;
-    justify-content: center;
     overflow-x: hidden;
-    overflow-y: scroll;
 }
 
 .container{
     width: 100vw;
     height: 100vh;
+     overflow-y: scroll;
+    scroll-snap-type: y mandatory; 
 }
 /* Navbar */
 .navbar *{
@@ -70,20 +69,29 @@ body{
     color: rgb(124, 172, 180);
 }
 /* Section Styling */
-section{
+.container section{
     width: 70vw;
-    height: 100vh;
+    height: 85vh;
     padding-top: 15vh;
     margin: auto;
     background-color: rgb(35, 61, 70);
+    border: 1vmin  rgb(140, 100, 69);
+    border-style:double;
+    scroll-snap-align: start;
 }
 /* Home */
 
 section#home div{
-    position:absolute;
+    position: relative;
+    /* top: 17%;
+    left: 45%; */
+    z-index: 1;
+}
+
+section#home div div{
+    position: absolute;
     top: 17%;
     left: 45%;
-    z-index: 1;
 }
 
 section#home div p:nth-child(1){
@@ -95,21 +103,24 @@ section#home div p:nth-child(2){
     text-align: right;
 }
 
+section#home div p:nth-child(3){
+    text-align: left;
+}
+
 .growingText span{
     font-size: 0vmin;
-    visibility: hidden;
-    transition: all .75s ease;
+    opacity: 0;
+    transition: all 1.75s ease;
 }
 
 .growingText span.animate{
-    visibility: visible;
+    opacity: .85;
     font-size: 1.75vmin;
 }
 
 #coverPhoto{
     margin: auto;
-    max-height: 75%;
-    max-width: 75%;
+    max-height: 85%;
     width: auto;
     border-radius: 10%;
 }
